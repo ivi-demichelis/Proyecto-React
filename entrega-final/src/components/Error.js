@@ -12,7 +12,7 @@ const Error = () => {
 			<Link
 				style={{
 					textDecoration: "none",
-					color: "#9f86c0",
+					color: "#c5c2c2",
 				}}
 				to="/"
 			>

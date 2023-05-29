@@ -1,17 +1,14 @@
 import Toolbar from "@mui/material/Toolbar";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import NightlightIcon from "@mui/icons-material/Nightlight";
-import IconButton from "@mui/material/IconButton";
+import LocalMoviesIcon from "@mui/icons-material/MovieFilterOutlined";
 import { useContext } from "react";
 import Context from "../context/Context";
-import Selectlang from "./Selectlang";
 import { cambioLenguaje } from "../utils/variables";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-import Box from "@mui/material/Box";
+
+
 const NavList = ({ handleClick, className, text }) => {
 	const context = useContext(Context);
 	return (
@@ -24,7 +21,7 @@ const NavList = ({ handleClick, className, text }) => {
 				to="/"
 			>
 				<LocalMoviesIcon
-					sx={{ fontSize: 70 }}
+					sx={{ fontSize: 60 }}
 					className="icono-principal"
 				/>
 			</Link>
@@ -40,7 +37,7 @@ const NavList = ({ handleClick, className, text }) => {
 					<Link
 						style={{
 							textDecoration: "none",
-							color: "#9f86c0",
+							color: "#c5c2c2",
 							width: "140px",
 						}}
 						className={text}
@@ -53,8 +50,8 @@ const NavList = ({ handleClick, className, text }) => {
 					<Link
 						style={{
 							textDecoration: "none",
-							color: "#9f86c0",
-							width: "194px",
+							color: "#c5c2c2",
+							width: "180px",
 						}}
 						className={text}
 						to="/ultimos-lanzamientos"
@@ -66,7 +63,7 @@ const NavList = ({ handleClick, className, text }) => {
 					<Link
 						style={{
 							textDecoration: "none",
-							color: "#9f86c0",
+							color: "#c5c2c2",
 						}}
 						className={text}
 						to="/populares"
@@ -75,11 +72,12 @@ const NavList = ({ handleClick, className, text }) => {
 					</Link>
 				</ListItem>
 				<ListItem button>
-					<SearchIcon sx={{ fontSize: 30, color: "#9f86c0" }} />
-					<Link
+					<SearchIcon sx={{ fontSize: 30, color: "#c5c2c2" }} />
+					<Link						
 						style={{
+							
 							textDecoration: "none",
-							color: "#9f86c0",
+							color: "#c5c2c2",					
 						}}
 						className={text}
 						to="/busqueda"
@@ -87,29 +85,7 @@ const NavList = ({ handleClick, className, text }) => {
 						{cambioLenguaje[context.lenguaje].navBuscar}
 					</Link>
 				</ListItem>
-			</List>
-			<Box
-				sx={{
-					display: "flex",
-					width: "80%",
-					justifyContent: "flex-end",
-				}}
-				className="box-nav"
-			>
-				<IconButton
-					color="secondary"
-					aria-label="cambio de tema oscuro a claro"
-					onClick={handleClick}
-					className="modo-icon"
-				>
-					{context.modoClaro ? (
-						<NightlightIcon sx={{ fontSize: 30 }} />
-					) : (
-						<LightModeIcon sx={{ fontSize: 30 }} />
-					)}
-				</IconButton>
-				<Selectlang />
-			</Box>
+			</List>			
 		</Toolbar>
 	);
 };

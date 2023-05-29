@@ -13,7 +13,7 @@ const Cards = ({ titulo, imagen }) => {
 			sx={{
 				width: 330,
 				height: 530,
-				bgcolor: context.modoClaro ? "#9f86c0" : "transparent",
+				bgcolor: context.modoClaro ? "#c5c2c2" : "transparent",
 				position: "relative",
 				m: 2,
 				"&:hover": {

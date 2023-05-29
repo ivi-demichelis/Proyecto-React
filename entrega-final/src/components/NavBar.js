@@ -20,14 +20,13 @@ const NavBar = () => {
 		<Box
 			sx={{
 				mb: 1,
-				width: "100%",
+				width: "100%",				
 			}}
 		>
 			<AppBar
 				sx={{
-					bgcolor: "#231942",
-					p: 2,
-					fontSize: 20,
+					bgcolor: "#701313d7",					
+					fontSize: 16,
 				}}
 				position="static"
 			>

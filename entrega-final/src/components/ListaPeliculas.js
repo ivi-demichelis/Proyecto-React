@@ -9,8 +9,8 @@ const ListaPeliculas = ({ info }) => {
 				xs={12}
 				md={12}
 				sx={{
-					height: "500px",
-					backgroundColor: "#9f86c0",
+					height: "400px",
+					backgroundColor: "rgb(131, 51, 51)",
 					overflowY: "scroll",
 					p: 5,
 				}}

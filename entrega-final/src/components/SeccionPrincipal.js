@@ -30,7 +30,7 @@ const SeccionPrincipal = () => {
 			{!cargandoGeneral && (
 				<>
 					<CarruselDos
-						mensaje="Peliculas que son Tendencia"
+						mensaje="Tendencia"
 						info={peliculasTendencia}
 						cargando={cargandoGeneral}
 					/>
@@ -43,17 +43,17 @@ const SeccionPrincipal = () => {
 						sx={{
 							bgcolor: context.modoClaro
 								? "modo-claro"
-								: "#221942",
+								: "rgb(131, 51, 51)",
 							mb: 5,
 							display: "flex",
 							flexDirection: "column",
 							justifyContent: "center",
 							alignItems: "center",
 							p: 5,
-							border: "1px solid #221942",
+							border: "1px solid rgb(131, 51, 51)",
 						}}
 					>
-						<Typography variant="h3" gutterBottom sx={{mb:4}}>
+						<Typography variant="h5" gutterBottom sx={{mb:4}}>
 							{cambioLenguaje[context.lenguaje].mejorPuntuadas}
 						</Typography>
 						<ListaPeliculas

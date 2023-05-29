@@ -22,7 +22,7 @@ const UltimosLanzamientos = () => {
 			};
 	return (
 		<div className="section-flex">
-			<Typography variant="h3" gutterBottom sx={{ mt: 4 }}>
+			<Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
 				{cambioLenguaje[contexto.lenguaje].navLanzamientos}
 			</Typography>
 			<Loader cargando={cargando} />
@@ -34,7 +34,7 @@ const UltimosLanzamientos = () => {
 							key={pelicula.id}
 							style={{
 								textDecoration: "none",
-								color: "#9f86c0",
+								color: "#c5c2c2",
 							}}
 						>
 							<Cards

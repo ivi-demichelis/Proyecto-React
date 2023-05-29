@@ -52,11 +52,11 @@ const Buscar = () => {
 				container
 				sx={{
 					p: 3,
-					bgcolor: context.modoClaro ? "transparent" : "#9f86c0",
+					bgcolor: context.modoClaro ? "transparent" : "#c5c2c2",
 				}}
 			>
 				<Grid item md={12} xs={12}>
-					<FormControl sx={{ width: "50%" }}>
+					<FormControl sx={{ width: "30%" }}>
 						<InputLabel htmlFor="input-busqueda">
 							{cambioLenguaje[context.lenguaje].ingresa}
 						</InputLabel>
@@ -71,7 +71,7 @@ const Buscar = () => {
 						onClick={handleClick}
 						variant="contained"
 						color="secondary"
-						size="small"
+						size="small"						
 						sx={{ m: 2 }}
 					>
 						{cambioLenguaje[context.lenguaje].navBuscar}
@@ -84,7 +84,7 @@ const Buscar = () => {
 					<Link
 						style={{
 							textDecoration: "none",
-							color: "#9f86c0",
+							color: "#c5c2c2",							
 						}}
 						to={`/movie/${pelicula.id}`}
 						key={pelicula.id}

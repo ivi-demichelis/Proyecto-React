@@ -20,7 +20,7 @@ const ListaItem = ({ titulo, imagen, link, puntaje }) => {
 		>
 			<Avatar alt={titulo} src={imagen} />
 			<Typography
-				variant="h5"
+				variant="18px"
 				sx={{ ml: 2 }}
 				className="tamaño-responsive"
 			>

@@ -9,7 +9,6 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 import { Link } from "react-router-dom";
-import Box from "@mui/material/Box";
 import { cambioLenguaje } from "../utils/variables";
 import { useContext } from "react";
 import Context from "../context/Context";
@@ -26,7 +25,7 @@ const CarruselDos = ({ info }) => {
 	const contexto = useContext(Context);
 	return (
 		<Container
-			maxWidth="xl"
+			maxWidth="l"
 			sx={{
 				bgcolor: "transparent",
 				display: "flex",
@@ -55,7 +54,7 @@ const CarruselDos = ({ info }) => {
 							<CardContent
 								sx={{
 									display: "flex",
-									width: "600px",
+									width: "400px",
 									flexDirection: "column",
 									justifyContent: "flex-end",
 									alignItems: "center",
@@ -64,15 +63,7 @@ const CarruselDos = ({ info }) => {
 									color: "white",
 								}}
 							>
-								<Box
-									sx={{
-										height: "100%",
-										width: "100%",
-										position: "absolute",
-										backgroundColor: "white",
-										opacity: 0.2,
-									}}
-								/>
+								
 								<Typography
 									variant="h4"
 								
@@ -92,7 +83,7 @@ const CarruselDos = ({ info }) => {
 									<Link
 										style={{
 											textDecoration: "none",
-											color: "#9f86c0",
+											color: "#c5c2c2",
 										}}
 										to={`/movie/${elemento.id}`}
 									>

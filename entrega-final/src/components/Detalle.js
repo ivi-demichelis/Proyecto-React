@@ -78,7 +78,7 @@ const Detalle = () => {
 						className="detalle-img"
 					/>
 					<CardContent className="detalle-info">
-						<Typography variant="h4" gutterBottom>
+						<Typography variant="h5" gutterBottom>
 							{pelicula.title}
 						</Typography>
 						<Stack spacing={1}>

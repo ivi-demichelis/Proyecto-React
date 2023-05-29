@@ -50,7 +50,7 @@ const Carrusel = ({ mensaje, info }) => {
 	};
 	return (
 		<Container
-			maxWidth="xl"
+			maxWidth="l"
 			sx={{
 				bgcolor: context.modoClaro ? "modo-claro" : "modo-oscuro",
 				p: 5,
@@ -58,7 +58,7 @@ const Carrusel = ({ mensaje, info }) => {
 			className="container-carrusel"
 		>
 			<Box sx={{ display: "flex", alignItems: "center" }}>
-				<Typography variant="h3">{mensaje}</Typography>
+				<Typography variant="h5">{mensaje}</Typography>
 				<Link
 					style={{
 						textDecoration: "none",
@@ -82,7 +82,7 @@ const Carrusel = ({ mensaje, info }) => {
 					<Link
 						style={{
 							textDecoration: "none",
-							color: "#9f86c0",
+							color: "#c5c2c2",
 						}}
 						to={`/movie/${elemento.id}`}
 						key={elemento.id}

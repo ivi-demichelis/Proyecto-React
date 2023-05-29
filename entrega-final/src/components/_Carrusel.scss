@@ -1,6 +1,6 @@
 @import "config";
 .slick-slider {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	.slick-prev:before,
 	.slick-next:before {
@@ -13,12 +13,12 @@
 
 @media screen and (max-width:500px) {
   .container-carruselDos {
-		width: 95% !important;
+		width: 80% !important;
 	}
 	.card-carruselDos {
-		height: 420px !important;
+		height: 300px !important;
 	}
 	.slick-track{
-		height: 500px !important;
+		height: 350px !important;
 	}
 }
